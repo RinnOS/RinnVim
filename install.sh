@@ -12,5 +12,7 @@ if ! command -v cargo >/dev/null 2>&1; then
   exit 1
 fi
 
+sh ./language-servers.sh
+
 mkdir $HOME/.config/nvim
 cp -r ./config/* $HOME/.config/nvim
